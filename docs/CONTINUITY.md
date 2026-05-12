@@ -29,6 +29,11 @@
   - Goal: initialize Git locally and leave the repo ready for first publish
   - Outcome: initialized `.git`, set the default branch to `main`, created the first
     commit, and verified a clean working tree with no remote configured yet
+- 2026-05-12 `github-publish`
+  - Status: completed
+  - Goal: publish the repo to the default GitHub account and push `main`
+  - Outcome: created public GitHub repo `goldtetsola/Andromeda-Gate`, added `origin`,
+    and pushed `main`
 
 - `rtk git init -b main` → initialized local Git repository on `main`
 - `rtk git commit -m "feat: add andromeda-gate skill repo"` → created initial commit `f30c15f`
@@ -36,3 +41,5 @@
 - `rtk git log --oneline -1` → `f30c15f feat: add andromeda-gate skill repo`
 - `rtk git remote -v` → no remotes configured
 - `rtk git status --short` → clean working tree after initial commit
+- `rtk proxy gh auth status` → authenticated as `goldtetsola`
+- `rtk proxy gh repo create goldtetsola/Andromeda-Gate --public --description "Reusable AI skill for auditing and generating Meta ad creatives that are genuinely distinct" --source=. --remote=origin --push` → created and published repo
