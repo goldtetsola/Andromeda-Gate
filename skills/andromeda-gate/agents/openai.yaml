@@ -1,0 +1,4 @@
+interface:
+  display_name: "Andromeda-Gate"
+  short_description: "Audit or generate Meta ad creatives that are visually and psychologically distinct."
+  default_prompt: "Audit these Meta creatives for overlap or generate a new set that is genuinely distinct."

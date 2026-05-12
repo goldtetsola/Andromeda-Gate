@@ -1,0 +1,22 @@
+{
+  "name": "andromeda-gate",
+  "owner": {
+    "name": "Goldtetsola",
+    "url": "https://github.com/goldtetsola"
+  },
+  "metadata": {
+    "description": "A single Claude-friendly skill for auditing and generating Meta ad creatives that are genuinely distinct",
+    "version": "1.0.0",
+    "repository": "https://github.com/goldtetsola/Andromeda-Gate"
+  },
+  "plugins": [
+    {
+      "name": "andromeda-gate",
+      "description": "A single skill for checking whether Meta ads are too similar, diagnosing creative fatigue, and generating fresh creative batches that differ visually and psychologically",
+      "source": "./",
+      "skills": [
+        "./skills/andromeda-gate"
+      ]
+    }
+  ]
+}
