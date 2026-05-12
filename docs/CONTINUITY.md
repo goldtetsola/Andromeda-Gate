@@ -25,6 +25,14 @@
   - Goal: make install and usage simpler for Claude-heavy users without losing cross-agent support
   - Outcome: added Claude plugin marketplace metadata, added OpenAI/Codex skill metadata, expanded skill trigger language, and rewrote the README in simpler language
 - 2026-05-12 `git-init-and-first-publish-prep`
-  - Status: in_progress
+  - Status: completed
   - Goal: initialize Git locally and leave the repo ready for first publish
-  - Next: create the first commit on `main` and verify a clean working tree
+  - Outcome: initialized `.git`, set the default branch to `main`, created the first
+    commit, and verified a clean working tree with no remote configured yet
+
+- `rtk git init -b main` → initialized local Git repository on `main`
+- `rtk git commit -m "feat: add andromeda-gate skill repo"` → created initial commit `f30c15f`
+- `rtk git branch --show-current` → `main`
+- `rtk git log --oneline -1` → `f30c15f feat: add andromeda-gate skill repo`
+- `rtk git remote -v` → no remotes configured
+- `rtk git status --short` → clean working tree after initial commit
