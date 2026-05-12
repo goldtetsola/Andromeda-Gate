@@ -37,17 +37,11 @@ specific job.
 
 ```text
 .
-├── .codex/
-│   └── napkin.md
 ├── .claude-plugin/
 │   └── marketplace.json
 ├── .github/
 │   └── workflows/
 │       └── validate.yml
-├── docs/
-│   └── CONTINUITY.md
-├── scripts/
-│   └── validate-skill-repo.sh
 ├── skills/
 │   └── andromeda-gate/
 │       ├── agents/
@@ -136,11 +130,6 @@ When changing the skill:
 2. Keep `SKILL.md` focused on the main workflow. Put deeper tables and examples in
    `references/`.
 3. Update `VERSIONS.md` when behavior or instructions materially change.
-4. Run the repo validator before publishing changes.
-
-```bash
-./scripts/validate-skill-repo.sh
-```
 
 ## Public repo notes
 
@@ -151,7 +140,7 @@ This repo now includes the pieces that usually make public skill repos easier to
 - A small metadata file for OpenAI/Codex-style skill pickers
 - Contribution guidance
 - A version file
-- A validation script plus CI workflow
+- A lightweight CI workflow
 
 ## License
 

@@ -12,18 +12,10 @@ Thanks for improving Andromeda-Gate.
 - Update `VERSIONS.md` when the skill changes in a way that affects behavior,
   structure, or guidance.
 
-## Local validation
-
-Run:
-
-```bash
-./scripts/validate-skill-repo.sh
-```
-
 ## Pull request checklist
 
 - Skill name and folder taxonomy still match
 - Reference paths still resolve
 - No loose root-level skill files were reintroduced
 - `README.md` and `VERSIONS.md` reflect material changes
-- Validation passes
+- Claude plugin metadata still points at the right skill folder

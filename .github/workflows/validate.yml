@@ -10,4 +10,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate repository structure
-        run: bash ./scripts/validate-skill-repo.sh
+        run: |
+          test -f README.md
+          test -f CONTRIBUTING.md
+          test -f AGENTS.md
+          test -f LICENSE
+          test -f VERSIONS.md
+          test -f .claude-plugin/marketplace.json
+          test -f skills/andromeda-gate/SKILL.md
+          test -f skills/andromeda-gate/agents/openai.yaml
+          test -f skills/andromeda-gate/references/andromeda-gate-reference.md
+          grep -q '^name: andromeda-gate$' skills/andromeda-gate/SKILL.md
+          grep -q 'references/andromeda-gate-reference.md' skills/andromeda-gate/SKILL.md
+          grep -q 'display_name: "Andromeda-Gate"' skills/andromeda-gate/agents/openai.yaml
