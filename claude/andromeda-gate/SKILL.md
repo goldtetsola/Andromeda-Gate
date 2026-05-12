@@ -1,17 +1,6 @@
 ---
 name: andromeda-gate
-version: 1.0.0
-description: |
-  Audit existing creatives or generate creative briefs that are genuinely distinct —
-  visually (so Meta's algorithm treats them as different ads) and psychologically
-  (so they actually reach different people). Use whenever the user asks to "audit my
-  creatives," "check distinctness," "are these different enough," "generate briefs,"
-  "create ad concepts," "build a creative batch," "plan a creative round," "check my
-  coverage," "diagnose creative fatigue," or anything involving Meta ad creative
-  planning, iteration, or distinctness. Also trigger when the user provides a set of
-  ads, briefs, or concepts and wants to know if they're too similar, or when they want
-  new concepts that won't overlap with existing ones. Covers static and video creatives
-  for Meta (Facebook/Instagram).
+description: Audit existing creatives or generate creative briefs that are genuinely distinct — visually (so Meta's algorithm treats them as different ads) and psychologically (so they actually reach different people). Use whenever the user asks to "audit my creatives," "check distinctness," "are these different enough," "generate briefs," "create ad concepts," "build a creative batch," "plan a creative round," "check my coverage," "diagnose creative fatigue," or anything involving Meta ad creative planning, iteration, or distinctness. Also trigger when the user provides a set of ads, briefs, or concepts and wants to know if they're too similar, or when they want new concepts that won't overlap with existing ones. Covers static and video creatives for Meta (Facebook/Instagram).
 ---
 
 # Andromeda-Gate

@@ -42,6 +42,12 @@ specific job.
 ├── .github/
 │   └── workflows/
 │       └── validate.yml
+├── claude/
+│   ├── andromeda-gate/
+│   │   ├── SKILL.md
+│   │   └── references/
+│   │       └── andromeda-gate-reference.md
+│   └── andromeda-gate.skill
 ├── skills/
 │   └── andromeda-gate/
 │       ├── agents/
@@ -69,7 +75,26 @@ If you use Claude Code, this is the nicest path:
 /plugin install andromeda-gate
 ```
 
-### Option 2: `npx skills`
+### Option 2: Drop the `.skill` file into Claude Cowork (or any Claude session)
+
+For Claude Cowork, or anywhere you want a one-file install, use the prepackaged
+artifact in `claude/`:
+
+- `claude/andromeda-gate.skill` — a zipped, Claude-compliant build of the skill.
+  Drop it into a Cowork session and reference it in your prompt
+  ("use the andromeda-gate skill to audit these creatives").
+- `claude/andromeda-gate/` — the same source unzipped. If you prefer manual
+  install on a local Claude Code setup, copy this folder into your skills dir:
+
+  ```bash
+  cp -r claude/andromeda-gate ~/.claude/skills/
+  ```
+
+The Claude-native build trims the frontmatter to fields Claude's skill loader
+accepts (no `version`, no OpenAI agent metadata). It's the same playbook as
+`skills/andromeda-gate/` — just packaged for Claude surfaces.
+
+### Option 3: `npx skills`
 
 This works well if you use Claude Code, Codex, Cursor, or another tool that supports
 the common skills layout:
@@ -88,7 +113,7 @@ npx skills add . --list
 Local proof: `npx skills add . --list` was tested in this repo and it found the
 `andromeda-gate` skill correctly.
 
-### Option 3: Copy the folder yourself
+### Option 4: Copy the folder yourself
 
 If you do not want to use an installer, copy the skill folder into your own skills
 folder:
